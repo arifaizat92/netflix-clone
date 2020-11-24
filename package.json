@@ -1,32 +1,25 @@
 {
-  "homepage": "http://arifaizat92.github.io/netflix-clone",
   "name": "netflix-clone",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "firebase": "^8.0.0",
-    "fuse.js": "^6.4.2",
+    "firebase": "^7.19.1",
+    "fuse.js": "^6.4.1",
     "normalize.css": "^8.0.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.0",
-    "styled-components": "^5.2.0",
-    "web-vitals": "^0.2.4"
+    "react-scripts": "3.4.0",
+    "styled-components": "^5.1.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage --watchAll",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {
+    "prettier": "^2.1.1"
   },
   "browserslist": {
     "production": [
@@ -39,11 +32,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "gh-pages": "^3.1.0"
   }
 }
