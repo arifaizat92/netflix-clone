@@ -5,6 +5,10 @@ export const Background = styled.div`
     display: flex;
     flex-direction: column;
     background: url(${({ src }) => src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg'}) top left / cover no-repeat;
+
+    @media (max-width: 700px) {
+      background: none;  
+    }
 `;
 
 
@@ -181,7 +185,7 @@ export const Feature = styled(Container)`
     align-items: normal;
     width: 50%;
 
-    @media (max-width: 110px) {
+    @media (max-width: 1000px) {
       display: none;  
     }
 `;
